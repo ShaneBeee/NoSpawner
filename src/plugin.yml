@@ -1,5 +1,12 @@
 main: tk.shanebee.noSpawner.Main
-version: 1.0.0
+version: 1.1.0
 author: ShaneBee
 name: NoSpawner
+description: Prevents spawners from spawning
 website: https://ShaneBee.tk
+api-version: 1.13
+
+commands:
+  nospawner:
+    description: <reload> and <about>
+    permission: nospawner.admin
