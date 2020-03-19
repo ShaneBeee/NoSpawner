@@ -18,7 +18,7 @@ class SpawnerListener implements Listener {
     }
 
     void loadWorldsConfig() {
-        this.WORLDS_LIST = this.PLUGIN.getConfig().getStringList("NoSpawner.enableSpawnersInWorld");
+        this.WORLDS_LIST = this.PLUGIN.getConfig().getStringList("NoSpawner.disabled-worlds");
     }
 
     @EventHandler
