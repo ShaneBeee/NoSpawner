@@ -3,6 +3,8 @@ package tk.shanebee.noSpawner;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Arrays;
+
 public class Main extends JavaPlugin {
 
     private FileConfiguration config = this.getConfig();
@@ -12,7 +14,8 @@ public class Main extends JavaPlugin {
         getLogger().info("Successfully loaded!");
 
         config.addDefault("NoSpawner.Prefix", "[NoSpawner]");
-        config.addDefault("NoSpawner.enabled", true);
+        config.addDefault("NoSpawner.enableForAllWorlds", true);
+        config.addDefault("NoSpawner.enableSpawnersInWorld", Arrays.asList("world", "world_nether"));
         config.options().copyDefaults(true);
         saveConfig();
 
